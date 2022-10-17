@@ -73,10 +73,15 @@ def Calculat_AVG(rate, num_case_experiment):
             json_data.append(json_line[i])
     file.close()
     # print(json_data)
-    for i in range(0,len(json_data),num_case_experiment):
-        for j in range(num_case_experiment):
+#     for i in range(0,len(json_data),num_case_experiment):
+#         for j in range(num_case_experiment):
+#             for k in range(11):
+#                 avg[j][k]=avg[j][k]+json_data[i+j][k]
+    len_num_case = len(num_case_experiment)
+    for i in range(0,len(json_data),len_num_case):
+        for j in range(len_num_case):
             for k in range(11):
-                avg[j][k]=avg[j][k]+json_data[i+j][k]
+                avg[num_case_experiment[j]][k]=avg[num_case_experiment[j]][k]+json_data[i+j][k]
     # print(avg)
 #     for i in json_data:
 #         print(i)
@@ -86,6 +91,6 @@ def Calculat_AVG(rate, num_case_experiment):
 #     print("*"*150)
     for i in avg:
         for j in range(len(i)):
-            i[j]=i[j]/(len(json_data)/num_case_experiment)
+            i[j]=i[j]/(len(json_data)/len_num_case)
 #     print(avg)
     return(avg)

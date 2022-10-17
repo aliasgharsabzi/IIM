@@ -245,12 +245,13 @@ all_vehicle=0
 # f=open("sample.json", "w") 
 clear_file()
 # Rate=[0.01,0.02,0.03,0.04,0.05,0.06,0.07,0.08,0.09,0.1]
-Rate=[0.01,0.02]
+Rate=[0.01]
 iteration = 1
-num_case_experiment = 9
+num_case_experiment = [0,1,2,3,4,5,6,7,8]
+# num_case_experiment = [0,3]
 for rate  in Rate:
     for loop in range(iteration):
-        for case in range(0,num_case_experiment, 1):
+        for case in num_case_experiment:
 #             input("promptAli")
             start_time = time.time()
             om1=[]
@@ -283,6 +284,20 @@ for rate  in Rate:
             angle=[]
             runtime_IM_list=[]
             fail=0
+            
+#             if case == 0 or 0 not in num_case_experiment:
+#                 for i in range(len(GeneratedCarTimeStamp)):
+#                     GeneratedCarTimeStamp[i]=threshold*GeneratedCarTimeStamp[i]*random.random()
+# #                     GeneratedCarTimeStamp[i]=GeneratedCarTimeStamp[i]+0.2
+#                 print(GeneratedCarTimeStamp)
+# 
+#             else:
+#                 input('prompt')
+#                 print("*"* 150)
+# #                 loop=0
+#                 data=readfile_Runs(loop)
+#                   print(data)
+            
             if case in [1,2,3,4,5,6,7,8]:
                 print("*"* 150)
 #                 loop=0
@@ -311,6 +326,7 @@ for rate  in Rate:
                     else:
                         om1=main_readfile(om1,counterTime,data)
                     print("Time:",t,line_num)
+                    
                     delay=[]
                     om1,om0,om0_sch,delay,delaynew,Num_change,X_kol,Y_kol,line_kol,angle,drop,AVG_pri1,AVG_pri2,runtime_IM,lastTime=clculat(om1,om0,conf_kol,t,delay,delaynew,
                                                                                            Num_change,X_kol,Y_kol,line_kol,angle,drop,AVG_pri1,AVG_pri2,

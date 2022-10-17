@@ -49,13 +49,13 @@ def plot_result():
             json_data.append(json_line[i])
     file.close()   
     # print(df)
-    # print(asd)
+    print(json_data)
     prim= []
     for i in json_data:
         for j in i:
             prim.append(j)
     
-    # print(prim)
+    print(prim)
     
     def extract_data(num_col):
         ex = []
@@ -83,10 +83,9 @@ def plot_result():
                         'RIM with weighted priority assignment, priority assignment based on MCTS, and changing the lane']
         # loop = ['0.01','0.02','0.03','0.04','0.05','0.06','0.07','0.08','0.09','0.1']
         dic = {}
-    #     print(ex)
         for i in range(8):
             dic[loop[i]] = ex[i]
-    #     print(dic)
+        print(dic)
         return(dic)
     # drawing chart according number of column
     num_col = 1
@@ -113,5 +112,6 @@ def plot_result():
     handles, labels= bar_plot(ax2, data, total_width=.8, single_width=.9,legend = False)
     fig.legend(handles, labels, loc='upper left')
     plt.show()
+# plot_result()
 
 
