@@ -1,5 +1,5 @@
 # Intelligent Intersection Management for Autonomous Vehicles
-Based on the journal paper "Intelligent Intersection Management for Autonomous Vehicles" by A. Sabzi, and M. Shirazi, submitted to IEEE Transaction on Computers, Special Issue on Real-Time System.
+Based on the journal paper "Intelligent Intersection Management for Autonomous Vehicles" by A. Sabzi, and M. Shirazi, submitted to IEEE Transactions on Intelligent Transportation Systems.
 # Quick Start
 1. Open python 3 and create a workspace.
 2. Download all files in this repository and paste them into the workspace created, because some functions were imported from these files into the "IM.py".
