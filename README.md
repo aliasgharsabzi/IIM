@@ -2,17 +2,17 @@
 Based on the journal paper "Intelligent Intersection Management for Autonomous Vehicles" by A. Sabzi, and M. Shirazi, submitted to IEEE Transactions on Intelligent Transportation Systems.
 # Quick Start
 1. Open python 3 and create a workspace.
-2. Download all files in this repository and paste them into the workspace created, because some functions were imported from these files into the "IM.py".
+2. Download all files in this repository and paste them into the created workspace, because some functions were imported from these files into the "IM.py".
 3. Rum the file "IM.py"
 
 # Parameters
 When you would run the IM.py file you can set some parameters such as Rate, iteration, and num_case_experiment in this file.
 1. Rate = This is a list that can set the flow rate of entrance vehicles into the intersection. 
 2. iteration = Number of runs for each rate
-3. num_case_experiment = This is a list that It can have values of 1 to 8. Each number corresponds to one case shown below:
+3. num_case_experiment = This is a list that it can have values of 1 to 8. Each number corresponds to one case shown below:
     - case 0 = Robust intersection management (RIM); Generating basic information and storing it in a JSON file. For a fair comparison of different cases, 
     we must store basic information because the basic information is generated randomly.
-    - case 1 = Robust intersection management (RIM); Reading basic information from created json file
+    - case 1 = Robust intersection management (RIM); Reading basic information from created JSON file
     - case 2 = RIM with weighted priority assignment policy
     - case 3 = RIM with changing the lane
     - case 4 = RIM with weighted priority assignment policy and changing the lane
