@@ -28,7 +28,7 @@ for example:
 ``` {"0.01": [[48.0, 1.8199199341888812, 23.681109865470845, 0.0, 4.768025159835815, 1.3488255975826577, 5.3475309647385245, 0.022955656051635742, 0.0, 9.0, 2.0],...]} ```
 this show that for rate "0.01"  in case 0 average results is for the number of vehicles, AVG_delay, time trip, number of change lane,
 excutionTime_overall, delay_first_priority, delay_second_priority, excutionTime_IM, and number of request fail respectively.<br />
-2. Also, you can active (uncomment) ``` draw(X_kol,Y_kol,numberkol,line_kol,angle) ``` in the end of code in "IM.py" for show simulator, but  notice that  you should set: <br /> 
+2. Also, you can active (uncomment) ``` draw(X_kol,Y_kol,numberkol,line_kol,angle) ``` in the end of code in "IM.py" for showing simulator, but  notice that  you should set: <br /> 
     - Rate = Just one arbitrary rate for example: Rate = [0.05]
     - iteration = 1
     - num_case_experiment = An arbitrary case for example: num_case_experiment = [0,3]. 0 is constant and 3 it means 'RIM with changing the lane' must be run.
